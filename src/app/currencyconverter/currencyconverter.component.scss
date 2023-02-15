@@ -1,0 +1,24 @@
+.currency {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+    padding: 17px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency-block {
+    margin-left: 10px;
+}
+
+.currency-select {
+    margin-right: 10px;
+}

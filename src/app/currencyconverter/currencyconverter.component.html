@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Currency Converter</h2>
+    <div class="currency">
+        <div class="currency-block">
+            <select [ngModel]="currency1" (change)="onChangeCurr1($event)" class="currency-select" name="" id="">
+                <option *ngFor="let curName of currencyNames">
+                   {{curName}}
+                </option>
+            </select>
+            <input (keyup)="onKeyUpEvent1($event)" [(ngModel)]="input1" type="number">
+        </div>
+        <div class="currency-block">
+            <select [ngModel]="currency2" (change)="onChangeCurr2($event)" class="currency-select" name="" id="">
+                <option *ngFor="let curName of currencyNames">
+                    {{curName}}
+                 </option>
+            </select>
+            <input [(ngModel)]="input2" (keyup)="onKeyUpEvent2($event)" type="number">
+        </div>
+    </div>
+    
+    
+</div>
+
